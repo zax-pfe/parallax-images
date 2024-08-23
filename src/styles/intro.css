@@ -1,0 +1,42 @@
+.intro {
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  height: 140vh;
+  width: 100%;
+  filter: brightness(60%);
+}
+
+.background-image img {
+  object-fit: cover;
+}
+
+.intro-container {
+  position: relative;
+  padding-top: 35vh;
+}
+
+.intro-elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.intro-image {
+  position: absolute;
+  width: 350px;
+  height: 475px;
+  object-fit: contain;
+  filter: brightness(60%);
+}
+
+.intro-text {
+  font-size: 7vw;
+  color: white;
+  z-index: 10;
+  position: relative;
+  text-transform: uppercase;
+}
