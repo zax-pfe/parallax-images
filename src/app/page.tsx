@@ -4,6 +4,7 @@ import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 import Intro from "@/components/Intro";
 import Description from "@/components/Description";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   useEffect(() => {
@@ -19,6 +20,8 @@ export default function Home() {
     <div>
       <Intro />
       <Description />
+      <Projects />
+
       <div className="h-[100vh]" />
     </div>
   );
