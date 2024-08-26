@@ -1,5 +1,5 @@
 .projects {
-  height: 200vh;
+  height: 500vh;
   display: flex;
   /* justify-content: center; */
   align-items: center;
@@ -10,7 +10,14 @@
 .projects-container {
   height: 90vh;
   width: 80vw;
-  display: flex;
+  /* display: flex; */
+  position: relative;
+  height: 150vh;
+}
+
+.test-div {
+  position: sticky;
+  top: 0;
 }
 
 .project-element-image {
@@ -18,6 +25,7 @@
   width: 30vw;
   display: flex;
   position: relative;
+  top: 0;
 
   /* height: 100%; */
 }
@@ -29,11 +37,18 @@
   height: 100%;
   top: 0;
   left: 0;
-  padding: 60px;
+  padding: 100px 60px 60px 60px;
+  /* z-index: 16; */
+}
+.project-element-text-container {
+  position: absolute;
+  display: flex;
+  left: 35%;
+  top: 1%;
 }
 
 .project-element-text {
-  height: 90vh;
+  height: 80vh;
   width: 25vw;
   color: white;
   font-size: 1.5vw;
@@ -77,4 +92,8 @@
 
   border-bottom: solid 1px white;
   width: 100%;
+}
+
+.project-menu-item p {
+  z-index: 15;
 }
